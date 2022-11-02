@@ -17,16 +17,30 @@ ul{
     list-style: none;
 }
 
-/*#container{*/
-/*    margin: 0 auto;*/
-/*    */
-/*}*/
+h2{
+    padding: 0;
+    margin: 0;
+}
 
-#header{
+#container{
+    margin: 0 auto;
+
+}
+
+#header, #footer{
     background-color: #1F2937;
     display: flex;
     justify-content: space-between;
     height: 150px;
+    padding: 10px 20px;
+    color: #E5E7EB;
+}
+
+#footer{
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    height: 100px;
 }
 
 #header ul{
@@ -61,6 +75,7 @@ ul{
 .header-content img{
     width: 400px;
     height: auto;
+    padding-bottom: 70px;
 }
 
 button{
@@ -91,12 +106,16 @@ button{
     text-align: center;
     height: 400px;
     background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .card-container{
     display: flex;
     justify-content: center;
     align-items: baseline;
+    margin-top: 30px;
 }
 
 .card{
@@ -107,7 +126,7 @@ button{
     width: 200px;
     height: auto;
     margin-bottom: 5px;
-    border: 4px solid #3882F6;
+    border: 6px solid #3882F6;
     border-radius: 10px;
 }
 
@@ -128,4 +147,30 @@ blockquote{
     font-weight: 600;
     font-size: 25px;
     margin-right: 20px;
+}
+
+.content-four{
+    background-color: #FFFFFF;
+    padding: 25px 50px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-us{
+    background-color: #3882F6;
+    border-radius: 10px;
+    color: #FFFFFF;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.contact-us button{
+    border: 2px solid #FFF;
+}
+
+.cu-left, .cu-right{
+    margin: 0 auto;
 }
